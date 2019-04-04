@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS2_Add_Site" time="26" tests="3" failures="0" errors="0">
+   <testsuite name="TS2_Add_Site" tests="3" failures="0" errors="0" time="26" timestamp="2019-04-04 09:59:58" hostname="ktran - engshare.delphidisplay.com" id="Test Suites/TS2_Add_Site">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\ktran\\Katalon Studio\\cloud_test2\\Reports\\TS2_Add_Site\\20190404_095955"/>
+         <property name="logFiles" value="C:\\Users\\ktran\\Katalon Studio\\cloud_test2\\Reports\\TS2_Add_Site\\20190404_095955\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="ktran - engshare.delphidisplay.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.0.5.10"/>
+         <property name="browser" value="Chrome 73.0.3683.86"/>
+         <property name="hostAddress" value="192.168.11.14"/>
+         <property name="sessionId" value="dfd091603d3e7f16e232e7c4b8c9ade3"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Login_Tests/TC1_Login_Valid" classname="Test Cases/Login_Tests/TC1_Login_Valid" status="PASSED">
+         <system-out><![CDATA[2019-04-04 09:59:59 - [TEST_CASE][PASSED] - Test Cases/Login_Tests/TC1_Login_Valid: Test Cases/Login_Tests/TC1_Login_Valid
+
+2019-04-04 10:00:00 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-04-04 10:00:01 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-04-04 10:00:01 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-04-04 10:00:06 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-04-04 10:00:06 - [TEST_STEP][PASSED] - navigateToUrl("http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login"): Navigate to 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login' successfully
+
+2019-04-04 10:00:07 - [MESSAGE][PASSED] - Navigate to 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login' successfully
+
+2019-04-04 10:00:07 - [TEST_STEP][PASSED] - startPage = getUrl(): Current window's url is: 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login'
+
+2019-04-04 10:00:07 - [MESSAGE][PASSED] - Current window's url is: 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login'
+
+2019-04-04 10:00:07 - [TEST_STEP][PASSED] - assert startPage == "http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login": null
+
+2019-04-04 10:00:07 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/input_Username"), Username): Text 'ktran
+' is set on object 'Object Repository/Page_Login/input_Username'
+
+2019-04-04 10:00:07 - [MESSAGE][PASSED] - Text 'ktran
+' is set on object 'Object Repository/Page_Login/input_Username'
+
+2019-04-04 10:00:07 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/input_Password"), Password): Text 'test!ng1
+' is set on object 'Object Repository/Page_Login/input_Password'
+
+2019-04-04 10:00:08 - [MESSAGE][PASSED] - Text 'test!ng1
+' is set on object 'Object Repository/Page_Login/input_Password'
+
+2019-04-04 10:00:08 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/a_Login")): Object: 'Object Repository/Page_Login/a_Login' is clicked on
+
+2019-04-04 10:00:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/a_Login' is clicked on
+
+2019-04-04 10:00:08 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-04-04 10:00:10 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-04-04 10:00:10 - [TEST_STEP][PASSED] - signedInPage = getUrl(): Current window's url is: 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site'
+
+2019-04-04 10:00:10 - [MESSAGE][PASSED] - Current window's url is: 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site'
+
+2019-04-04 10:00:10 - [TEST_STEP][PASSED] - assert signedInPage == "http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site": null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Sites/TC4_Add_Site" classname="Test Cases/Sites/TC4_Add_Site" status="PASSED">
+         <system-out><![CDATA[2019-04-04 10:00:10 - [TEST_CASE][PASSED] - Test Cases/Sites/TC4_Add_Site: Test Cases/Sites/TC4_Add_Site
+
+2019-04-04 10:00:11 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/a_Add Site")): Object: 'Object Repository/Page_HomePage/Add Site/a_Add Site' is clicked on
+
+2019-04-04 10:00:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/a_Add Site' is clicked on
+
+2019-04-04 10:00:11 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter Site Name")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Site Name' is clicked on
+
+2019-04-04 10:00:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Site Name' is clicked on
+
+2019-04-04 10:00:12 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input__siteName"), findTestData("Sites/TD_Sites").getValue(1, 1)): Text 'McDonald's 4' is set on object 'Object Repository/Page_HomePage/Add Site/input__siteName'
+
+2019-04-04 10:00:14 - [MESSAGE][PASSED] - Text 'McDonald's 4' is set on object 'Object Repository/Page_HomePage/Add Site/input__siteName'
+
+2019-04-04 10:00:14 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter Address")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Address' is clicked on
+
+2019-04-04 10:00:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Address' is clicked on
+
+2019-04-04 10:00:14 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input_Enter Site Name_address"), findTestData("Sites/TD_Sites").getValue(2, 1)): Text '11321 Talbert Ave' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Site Name_address'
+
+2019-04-04 10:00:15 - [MESSAGE][PASSED] - Text '11321 Talbert Ave' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Site Name_address'
+
+2019-04-04 10:00:15 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter City")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter City' is clicked on
+
+2019-04-04 10:00:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter City' is clicked on
+
+2019-04-04 10:00:15 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input_Enter Address_city"), findTestData("Sites/TD_Sites").getValue(3, 1)): Text 'Fountain Valley' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Address_city'
+
+2019-04-04 10:00:16 - [MESSAGE][PASSED] - Text 'Fountain Valley' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Address_city'
+
+2019-04-04 10:00:16 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter State")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter State' is clicked on
+
+2019-04-04 10:00:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter State' is clicked on
+
+2019-04-04 10:00:16 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input_Enter City_state"), findTestData("Sites/TD_Sites").getValue(4, 1)): Text 'California' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter City_state'
+
+2019-04-04 10:00:17 - [MESSAGE][PASSED] - Text 'California' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter City_state'
+
+2019-04-04 10:00:17 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/a_NEXT")): Object: 'Object Repository/Page_HomePage/Add Site/a_NEXT' is clicked on
+
+2019-04-04 10:00:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/a_NEXT' is clicked on
+
+2019-04-04 10:00:17 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input_NEXT_country"), findTestData("Sites/TD_Sites").getValue(5, 1)): Text 'United States' is set on object 'Object Repository/Page_HomePage/Add Site/input_NEXT_country'
+
+2019-04-04 10:00:18 - [MESSAGE][PASSED] - Text 'United States' is set on object 'Object Repository/Page_HomePage/Add Site/input_NEXT_country'
+
+2019-04-04 10:00:18 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter ZIP Code")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter ZIP Code' is clicked on
+
+2019-04-04 10:00:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter ZIP Code' is clicked on
+
+2019-04-04 10:00:18 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input_Enter Country_ZIP"), findTestData("Sites/TD_Sites").getValue(6, 1)): Text '92708' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Country_ZIP'
+
+2019-04-04 10:00:18 - [MESSAGE][PASSED] - Text '92708' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Country_ZIP'
+
+2019-04-04 10:00:18 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter Contact Name")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Contact Name' is clicked on
+
+2019-04-04 10:00:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Contact Name' is clicked on
+
+2019-04-04 10:00:19 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input_Enter ZIP Code_cName"), findTestData("Sites/TD_Sites").getValue(7, 1)): Text 'Ronald' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter ZIP Code_cName'
+
+2019-04-04 10:00:19 - [MESSAGE][PASSED] - Text 'Ronald' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter ZIP Code_cName'
+
+2019-04-04 10:00:19 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter Location Phone Number")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Location Phone Number' is clicked on
+
+2019-04-04 10:00:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Location Phone Number' is clicked on
+
+2019-04-04 10:00:19 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input_Enter Contact Name_locationPhone"), findTestData("Sites/TD_Sites").getValue(8, 1)): Text '1234567899' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Contact Name_locationPhone'
+
+2019-04-04 10:00:20 - [MESSAGE][PASSED] - Text '1234567899' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Contact Name_locationPhone'
+
+2019-04-04 10:00:20 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/a_NEXT_1")): Object: 'Object Repository/Page_HomePage/Add Site/a_NEXT_1' is clicked on
+
+2019-04-04 10:00:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/a_NEXT_1' is clicked on
+
+2019-04-04 10:00:20 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/a_Next (1)")): Object: 'Object Repository/Page_HomePage/Add Site/a_Next (1)' is clicked on
+
+2019-04-04 10:00:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/a_Next (1)' is clicked on
+
+2019-04-04 10:00:20 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/a_Copy to all")): Object: 'Object Repository/Page_HomePage/Add Site/a_Copy to all' is clicked on
+
+2019-04-04 10:00:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/a_Copy to all' is clicked on
+
+2019-04-04 10:00:20 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_HomePage/Add Site/div_Success"), 20): Object 'Object Repository/Page_HomePage/Add Site/div_Success' is present
+
+2019-04-04 10:00:21 - [MESSAGE][PASSED] - Object 'Object Repository/Page_HomePage/Add Site/div_Success' is present
+
+2019-04-04 10:00:21 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/a_Next_1 (1)")): Object: 'Object Repository/Page_HomePage/Add Site/a_Next_1 (1)' is clicked on
+
+2019-04-04 10:00:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/a_Next_1 (1)' is clicked on
+
+2019-04-04 10:00:21 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/a_Finish")): Object: 'Object Repository/Page_HomePage/Add Site/a_Finish' is clicked on
+
+2019-04-04 10:00:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/a_Finish' is clicked on
+
+2019-04-04 10:00:21 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_HomePage/Add Site/div_Success"), 20): Object 'Object Repository/Page_HomePage/Add Site/div_Success' is present
+
+2019-04-04 10:00:21 - [MESSAGE][PASSED] - Object 'Object Repository/Page_HomePage/Add Site/div_Success' is present
+
+2019-04-04 10:00:21 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-04-04 10:00:23 - [MESSAGE][PASSED] - Delayed 2 second(s)]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Logout/TC3_Logout" classname="Test Cases/Logout/TC3_Logout" status="PASSED">
+         <system-out><![CDATA[2019-04-04 10:00:23 - [TEST_CASE][PASSED] - Test Cases/Logout/TC3_Logout: Test Cases/Logout/TC3_Logout
+
+2019-04-04 10:00:24 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2019-04-04 10:00:25 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2019-04-04 10:00:25 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Profile/i_Add Site_upDownIcon")): Object: 'Object Repository/Page_HomePage/Profile/i_Add Site_upDownIcon' is clicked on
+
+2019-04-04 10:00:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Profile/i_Add Site_upDownIcon' is clicked on
+
+2019-04-04 10:00:25 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Profile/a_Sign Out")): Object: 'Object Repository/Page_HomePage/Profile/a_Sign Out' is clicked on
+
+2019-04-04 10:00:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Profile/a_Sign Out' is clicked on
+
+2019-04-04 10:00:25 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Profile/a_Yes")): Object: 'Object Repository/Page_HomePage/Profile/a_Yes' is clicked on
+
+2019-04-04 10:00:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Profile/a_Yes' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-04 09:59:58 - [TEST_SUITE][PASSED] - TS2_Add_Site: Test Cases/Logout/TC3_Logout]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

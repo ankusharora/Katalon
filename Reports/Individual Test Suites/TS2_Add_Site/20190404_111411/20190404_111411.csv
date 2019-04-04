@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS2_Add_Site,Chrome 73.0.3683.86,,2019-04-04 11:14:15,2019-04-04 11:14:51,36.005s,PASSED
+,,,,,,
+Test Cases/Login_Tests/TC1_Login_Valid,Chrome 73.0.3683.86,,2019-04-04 11:14:16,2019-04-04 11:14:29,12.855s,PASSED
+"login_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login""",Chrome 73.0.3683.86,,2019-04-04 11:14:17,2019-04-04 11:14:17,0.025s,PASSED
+"home_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site""",Chrome 73.0.3683.86,,2019-04-04 11:14:17,2019-04-04 11:14:17,0.089s,PASSED
+"openBrowser("""")",Chrome 73.0.3683.86,,2019-04-04 11:14:17,2019-04-04 11:14:22,5.294s,PASSED
+navigateToUrl(login_site),Chrome 73.0.3683.86,,2019-04-04 11:14:22,2019-04-04 11:14:23,1.136s,PASSED
+"setText(findTestObject(""Page_Login/input_Username""), findTestData(""Login/TD_Login"").getValue(1, 1))",Chrome 73.0.3683.86,,2019-04-04 11:14:23,2019-04-04 11:14:26,2.573s,PASSED
+"setText(findTestObject(""Page_Login/input_Password""), findTestData(""Login/TD_Login"").getValue(2, 1))",Chrome 73.0.3683.86,,2019-04-04 11:14:26,2019-04-04 11:14:26,0.337s,PASSED
+"click(findTestObject(""Page_Login/a_Login""))",Chrome 73.0.3683.86,,2019-04-04 11:14:26,2019-04-04 11:14:27,0.205s,PASSED
+delay(2),Chrome 73.0.3683.86,,2019-04-04 11:14:27,2019-04-04 11:14:29,2.063s,PASSED
+signedInPage = getUrl(),Chrome 73.0.3683.86,,2019-04-04 11:14:29,2019-04-04 11:14:29,0.093s,PASSED
+assert signedInPage == home_site,Chrome 73.0.3683.86,,2019-04-04 11:14:29,2019-04-04 11:14:29,0.008s,PASSED
+,,,,,,
+Test Cases/Sites/Add Site/TC5_Add_Multiple_Sites,Chrome 73.0.3683.86,,2019-04-04 11:14:29,2019-04-04 11:14:48,19.479s,PASSED
+"for ([row = 2, row <= findTestData(""Sites/TD_Sites"").getRowNumbers(), (row++)])",Chrome 73.0.3683.86,,2019-04-04 11:14:29,2019-04-04 11:14:48,18.786s,PASSED
+,,,,,,
+Test Cases/Logout/TC3_Logout,Chrome 73.0.3683.86,,2019-04-04 11:14:48,2019-04-04 11:14:51,2.812s,PASSED
+delay(2),Chrome 73.0.3683.86,,2019-04-04 11:14:49,2019-04-04 11:14:51,2.004s,PASSED
+"click(findTestObject(""Page_HomePage/Profile/i_Add Site_upDownIcon""))",Chrome 73.0.3683.86,,2019-04-04 11:14:51,2019-04-04 11:14:51,0.116s,PASSED
+"click(findTestObject(""Page_HomePage/Profile/a_Sign Out""))",Chrome 73.0.3683.86,,2019-04-04 11:14:51,2019-04-04 11:14:51,0.184s,PASSED
+"click(findTestObject(""Page_HomePage/Profile/a_Yes""))",Chrome 73.0.3683.86,,2019-04-04 11:14:51,2019-04-04 11:14:51,0.144s,PASSED

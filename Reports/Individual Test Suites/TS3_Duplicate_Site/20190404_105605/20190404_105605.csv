@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS3_Duplicate_Site,Chrome 73.0.3683.86,,2019-04-04 10:56:09,2019-04-04 10:56:25,15.522s,FAILED
+,,,,,,
+Test Cases/Login_Tests/TC1_Login_Valid,Chrome 73.0.3683.86,,2019-04-04 10:56:10,2019-04-04 10:56:22,11.979s,PASSED
+"login_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login""",Chrome 73.0.3683.86,,2019-04-04 10:56:11,2019-04-04 10:56:11,0.024s,PASSED
+"home_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site""",Chrome 73.0.3683.86,,2019-04-04 10:56:11,2019-04-04 10:56:11,0.028s,PASSED
+"openBrowser("""")",Chrome 73.0.3683.86,,2019-04-04 10:56:11,2019-04-04 10:56:16,4.825s,PASSED
+navigateToUrl(login_site),Chrome 73.0.3683.86,,2019-04-04 10:56:16,2019-04-04 10:56:17,1.258s,PASSED
+"setText(findTestObject(""Page_Login/input_Username""), findTestData(""Login/TD_Login"").getValue(1, 1))",Chrome 73.0.3683.86,,2019-04-04 10:56:17,2019-04-04 10:56:19,2.222s,PASSED
+"setText(findTestObject(""Page_Login/input_Password""), findTestData(""Login/TD_Login"").getValue(2, 1))",Chrome 73.0.3683.86,,2019-04-04 10:56:19,2019-04-04 10:56:20,0.418s,PASSED
+"click(findTestObject(""Page_Login/a_Login""))",Chrome 73.0.3683.86,,2019-04-04 10:56:20,2019-04-04 10:56:20,0.200s,PASSED
+delay(2),Chrome 73.0.3683.86,,2019-04-04 10:56:20,2019-04-04 10:56:22,2.054s,PASSED
+signedInPage = getUrl(),Chrome 73.0.3683.86,,2019-04-04 10:56:22,2019-04-04 10:56:22,0.053s,PASSED
+assert signedInPage == home_site,Chrome 73.0.3683.86,,2019-04-04 10:56:22,2019-04-04 10:56:22,0.000s,PASSED
+,,,,,,
+Test Cases/Sites/Add Site/TC6_Add_Duplicate_Site,Chrome 73.0.3683.86,,2019-04-04 10:56:22,2019-04-04 10:56:25,2.831s,FAILED
+"click(findTestObject(""Page_HomePage/Add Site/a_Add Site""))",Chrome 73.0.3683.86,,2019-04-04 10:56:22,2019-04-04 10:56:23,0.481s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/label_Enter Site Name""))",Chrome 73.0.3683.86,,2019-04-04 10:56:23,2019-04-04 10:56:23,0.420s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Site/input__siteName""), findTestData(""Sites/TD_Sites"").getValue(1, 1))",Chrome 73.0.3683.86,,2019-04-04 10:56:23,2019-04-04 10:56:24,0.679s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/label_Enter Address""))",Chrome 73.0.3683.86,,2019-04-04 10:56:24,2019-04-04 10:56:24,0.291s,PASSED
+"verifyElementPresent(findTestObject(""Page_Home/Duplicate Site/div_This site name already exists.""), 3)",Chrome 73.0.3683.86,,2019-04-04 10:56:24,2019-04-04 10:56:25,0.515s,FAILED

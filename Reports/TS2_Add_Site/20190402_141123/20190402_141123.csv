@@ -1,0 +1,28 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS2_Add_Site,Firefox 65.0,,2019-04-02 14:11:30,2019-04-02 14:11:58,28.860s,FAILED
+,,,,,,
+Test Cases/Login_Tests/TC1_Login_Valid,Firefox 65.0,,2019-04-02 14:11:30,2019-04-02 14:11:50,20.023s,PASSED
+"openBrowser("""")",Firefox 65.0,,2019-04-02 14:11:31,2019-04-02 14:11:45,13.547s,PASSED
+"navigateToUrl(""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login"")",Firefox 65.0,,2019-04-02 14:11:45,2019-04-02 14:11:47,2.062s,PASSED
+startPage = getUrl(),Firefox 65.0,,2019-04-02 14:11:47,2019-04-02 14:11:47,0.069s,PASSED
+"assert startPage == ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login""",Firefox 65.0,,2019-04-02 14:11:47,2019-04-02 14:11:47,0.006s,PASSED
+"setText(findTestObject(""Page_Login/input_Username""), Username)",Firefox 65.0,,2019-04-02 14:11:47,2019-04-02 14:11:47,0.582s,PASSED
+"setText(findTestObject(""Page_Login/input_Password""), Password)",Firefox 65.0,,2019-04-02 14:11:47,2019-04-02 14:11:48,0.254s,PASSED
+"click(findTestObject(""Page_Login/a_Login""))",Firefox 65.0,,2019-04-02 14:11:48,2019-04-02 14:11:48,0.332s,PASSED
+delay(2),Firefox 65.0,,2019-04-02 14:11:48,2019-04-02 14:11:50,2.085s,PASSED
+signedInPage = getUrl(),Firefox 65.0,,2019-04-02 14:11:50,2019-04-02 14:11:50,0.086s,PASSED
+"assert signedInPage == ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site""",Firefox 65.0,,2019-04-02 14:11:50,2019-04-02 14:11:50,0.002s,PASSED
+,,,,,,
+Test Cases/Sites/TC3_Add_Site,Firefox 65.0,,2019-04-02 14:11:50,2019-04-02 14:11:56,5.327s,FAILED
+"click(findTestObject(""Page_HomePage/Add Site/a_Add Site""))",Firefox 65.0,,2019-04-02 14:11:51,2019-04-02 14:11:52,0.990s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/label_Enter Site Name""))",Firefox 65.0,,2019-04-02 14:11:52,2019-04-02 14:11:52,0.446s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Site/input__siteName""), ""in and out"")",Firefox 65.0,,2019-04-02 14:11:52,2019-04-02 14:11:52,0.174s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/label_Enter Address""))",Firefox 65.0,,2019-04-02 14:11:52,2019-04-02 14:11:53,0.378s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Site/input__siteName""), ""in and out 2"")",Firefox 65.0,,2019-04-02 14:11:53,2019-04-02 14:11:53,0.352s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Site/input_Enter Site Name_address""), ""123 potato"")",Firefox 65.0,,2019-04-02 14:11:53,2019-04-02 14:11:54,0.471s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/label_Enter City""))",Firefox 65.0,,2019-04-02 14:11:54,2019-04-02 14:11:54,0.367s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Site/input_Enter Address_city""), ""irvine"")",Firefox 65.0,,2019-04-02 14:11:54,2019-04-02 14:11:54,0.231s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/label_Enter State""))",Firefox 65.0,,2019-04-02 14:11:54,2019-04-02 14:11:55,0.393s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Site/input_Enter City_state""), ""california"")",Firefox 65.0,,2019-04-02 14:11:55,2019-04-02 14:11:55,0.262s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/a_NEXT""))",Firefox 65.0,,2019-04-02 14:11:55,2019-04-02 14:11:55,0.395s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Site/input_NEXT_country""), ""united states"")",Firefox 65.0,,2019-04-02 14:11:55,2019-04-02 14:11:56,0.272s,FAILED

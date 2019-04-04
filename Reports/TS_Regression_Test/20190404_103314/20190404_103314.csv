@@ -1,0 +1,25 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS_Regression_Test,Chrome 73.0.3683.86,,2019-04-04 10:33:17,2019-04-04 10:33:38,20.610s,PASSED
+,,,,,,
+Test Cases/Login_Tests/TC2_Login_Invalid,Chrome 73.0.3683.86,,2019-04-04 10:33:18,2019-04-04 10:33:28,9.596s,PASSED
+"login_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login""",Chrome 73.0.3683.86,,2019-04-04 10:33:19,2019-04-04 10:33:19,0.081s,PASSED
+"openBrowser("""")",Chrome 73.0.3683.86,,2019-04-04 10:33:19,2019-04-04 10:33:25,5.735s,PASSED
+navigateToUrl(login_site),Chrome 73.0.3683.86,,2019-04-04 10:33:25,2019-04-04 10:33:26,1.110s,PASSED
+"setText(findTestObject(""Page_Login/input_Username""), invalid_user)",Chrome 73.0.3683.86,,2019-04-04 10:33:26,2019-04-04 10:33:27,0.793s,PASSED
+"setText(findTestObject(""Page_Login/input_Password""), invalid_password)",Chrome 73.0.3683.86,,2019-04-04 10:33:27,2019-04-04 10:33:27,0.298s,PASSED
+"click(findTestObject(""Page_Login/a_Login""))",Chrome 73.0.3683.86,,2019-04-04 10:33:27,2019-04-04 10:33:27,0.200s,PASSED
+"verifyElementPresent(findTestObject(""Page_Login/div_Invalid username or password""), 3)",Chrome 73.0.3683.86,,2019-04-04 10:33:27,2019-04-04 10:33:28,0.258s,PASSED
+current_site = getUrl(),Chrome 73.0.3683.86,,2019-04-04 10:33:28,2019-04-04 10:33:28,0.111s,PASSED
+assert current_site == login_site,Chrome 73.0.3683.86,,2019-04-04 10:33:28,2019-04-04 10:33:28,0.003s,PASSED
+,,,,,,
+Test Cases/Login_Tests/TC1_Login_Valid,Chrome 73.0.3683.86,,2019-04-04 10:33:28,2019-04-04 10:33:38,10.223s,PASSED
+"login_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login""",Chrome 73.0.3683.86,,2019-04-04 10:33:29,2019-04-04 10:33:29,0.001s,PASSED
+"home_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site""",Chrome 73.0.3683.86,,2019-04-04 10:33:29,2019-04-04 10:33:29,0.001s,PASSED
+"openBrowser("""")",Chrome 73.0.3683.86,,2019-04-04 10:33:29,2019-04-04 10:33:32,3.542s,PASSED
+navigateToUrl(login_site),Chrome 73.0.3683.86,,2019-04-04 10:33:32,2019-04-04 10:33:33,1.009s,PASSED
+"setText(findTestObject(""Page_Login/input_Username""), findTestData(""Login/TD_Login"").getValue(1, 1))",Chrome 73.0.3683.86,,2019-04-04 10:33:33,2019-04-04 10:33:35,2.079s,PASSED
+"setText(findTestObject(""Page_Login/input_Password""), findTestData(""Login/TD_Login"").getValue(2, 1))",Chrome 73.0.3683.86,,2019-04-04 10:33:35,2019-04-04 10:33:36,0.423s,PASSED
+"click(findTestObject(""Page_Login/a_Login""))",Chrome 73.0.3683.86,,2019-04-04 10:33:36,2019-04-04 10:33:36,0.168s,PASSED
+delay(2),Chrome 73.0.3683.86,,2019-04-04 10:33:36,2019-04-04 10:33:38,2.042s,PASSED
+signedInPage = getUrl(),Chrome 73.0.3683.86,,2019-04-04 10:33:38,2019-04-04 10:33:38,0.028s,PASSED
+assert signedInPage == home_site,Chrome 73.0.3683.86,,2019-04-04 10:33:38,2019-04-04 10:33:38,0.000s,PASSED

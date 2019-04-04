@@ -1,0 +1,17 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS2_Add_Site,Chrome 73.0.3683.86,,2019-04-02 14:16:01,2019-04-02 14:16:18,17.470s,FAILED
+,,,,,,
+Test Cases/Login_Tests/TC1_Login_Valid,Chrome 73.0.3683.86,,2019-04-02 14:16:02,2019-04-02 14:16:12,10.666s,FAILED
+"openBrowser("""")",Chrome 73.0.3683.86,,2019-04-02 14:16:03,2019-04-02 14:16:07,4.829s,PASSED
+"navigateToUrl(""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login"")",Chrome 73.0.3683.86,,2019-04-02 14:16:07,2019-04-02 14:16:09,1.220s,PASSED
+startPage = getUrl(),Chrome 73.0.3683.86,,2019-04-02 14:16:09,2019-04-02 14:16:09,0.284s,PASSED
+"assert startPage == ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login""",Chrome 73.0.3683.86,,2019-04-02 14:16:09,2019-04-02 14:16:09,0.004s,PASSED
+"setText(findTestObject(""Page_Login/input_Username""), Username)",Chrome 73.0.3683.86,,2019-04-02 14:16:09,2019-04-02 14:16:10,0.604s,PASSED
+"setText(findTestObject(""Page_Login/input_Password""), Password)",Chrome 73.0.3683.86,,2019-04-02 14:16:10,2019-04-02 14:16:10,0.300s,PASSED
+"click(findTestObject(""Page_Login/a_Login""))",Chrome 73.0.3683.86,,2019-04-02 14:16:10,2019-04-02 14:16:10,0.308s,PASSED
+delay(2),Chrome 73.0.3683.86,,2019-04-02 14:16:10,2019-04-02 14:16:12,2.050s,PASSED
+signedInPage = getUrl(),Chrome 73.0.3683.86,,2019-04-02 14:16:12,2019-04-02 14:16:12,0.033s,PASSED
+"assert signedInPage == ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site""",Chrome 73.0.3683.86,,2019-04-02 14:16:12,2019-04-02 14:16:12,0.016s,FAILED
+,,,,,,
+Test Cases/Sites/TC3_Add_Site,Chrome 73.0.3683.86,,2019-04-02 14:16:12,2019-04-02 14:16:17,4.684s,FAILED
+"click(findTestObject(""Page_HomePage/Add Site/a_Add Site""))",Chrome 73.0.3683.86,,2019-04-02 14:16:13,2019-04-02 14:16:17,3.934s,FAILED

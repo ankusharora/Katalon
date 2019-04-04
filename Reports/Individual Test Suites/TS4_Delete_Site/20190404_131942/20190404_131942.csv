@@ -1,0 +1,34 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS4_Delete_Site,Chrome 73.0.3683.86,,2019-04-04 13:19:49,2019-04-04 13:20:06,17.514s,FAILED
+,,,,,,
+Test Cases/Login_Tests/TC1_Login_Valid,Chrome 73.0.3683.86,,2019-04-04 13:19:50,2019-04-04 13:20:04,13.988s,PASSED
+"login_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login""",Chrome 73.0.3683.86,,2019-04-04 13:19:51,2019-04-04 13:19:51,0.081s,PASSED
+"home_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site""",Chrome 73.0.3683.86,,2019-04-04 13:19:51,2019-04-04 13:19:51,0.069s,PASSED
+"openBrowser("""")",Chrome 73.0.3683.86,,2019-04-04 13:19:51,2019-04-04 13:19:57,5.932s,PASSED
+navigateToUrl(login_site),Chrome 73.0.3683.86,,2019-04-04 13:19:57,2019-04-04 13:19:58,1.260s,PASSED
+"setText(findTestObject(""Page_Login/input_Username""), findTestData(""Login/TD_Login"").getValue(1, 2))",Chrome 73.0.3683.86,,2019-04-04 13:19:58,2019-04-04 13:20:01,2.719s,PASSED
+"setText(findTestObject(""Page_Login/input_Password""), findTestData(""Login/TD_Login"").getValue(2, 2))",Chrome 73.0.3683.86,,2019-04-04 13:20:01,2019-04-04 13:20:01,0.594s,PASSED
+"click(findTestObject(""Page_Login/a_Login""))",Chrome 73.0.3683.86,,2019-04-04 13:20:01,2019-04-04 13:20:02,0.320s,PASSED
+delay(2),Chrome 73.0.3683.86,,2019-04-04 13:20:02,2019-04-04 13:20:04,2.052s,PASSED
+signedInPage = getUrl(),Chrome 73.0.3683.86,,2019-04-04 13:20:04,2019-04-04 13:20:04,0.064s,PASSED
+assert signedInPage == home_site,Chrome 73.0.3683.86,,2019-04-04 13:20:04,2019-04-04 13:20:04,0.002s,PASSED
+,,,,,,
+Test Cases/Sites/Delete Site/TC7_Delete_One_Site,Chrome 73.0.3683.86,,2019-04-04 13:20:04,2019-04-04 13:20:06,2.376s,FAILED
+"click(findTestObject(""Page_HomePage/Site/Delete Site/delete_button""))",Chrome 73.0.3683.86,"
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login')
+
+WebUI.setText(findTestObject('Page_HomePage/Site/Delete Site/input_Create Account_userName'), 'ktran')
+
+WebUI.setEncryptedText(findTestObject('Page_HomePage/Site/Delete Site/input_Name_Password'), '/So27XdXxPT9Hysx/1MEdQ==')
+
+WebUI.sendKeys(findTestObject('Page_HomePage/Site/Delete Site/input_Name_Password'), Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Page_HomePage/Site/Delete Site/delete_button'))
+
+
+",2019-04-04 13:20:04,2019-04-04 13:20:05,0.168s,PASSED
+"click(findTestObject(""Page_HomePage/Site/Delete Site/span_Yes""))",Chrome 73.0.3683.86,,2019-04-04 13:20:05,2019-04-04 13:20:05,0.278s,PASSED
+"click(findTestObject(""Page_HomePage/Site/Delete Site/div_Site has been deleted successfully.""))",Chrome 73.0.3683.86,,2019-04-04 13:20:05,2019-04-04 13:20:06,0.726s,PASSED
+"click(findTestObject(""Page_HomePage/Site/Delete Site/img_Add Site_acount-user rounded-circle ml-4""))",Chrome 73.0.3683.86,,2019-04-04 13:20:06,2019-04-04 13:20:06,0.523s,FAILED

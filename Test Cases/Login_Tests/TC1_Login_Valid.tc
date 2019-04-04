@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1_Login_Valid</name>
+   <tag></tag>
+   <comment>
+WebUI.click(findTestObject('Page_HomePage/Profile/i_Add Site_upDownIcon'))
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Page_HomePage/Profile/a_Sign Out'))
+
+WebUI.closeBrowser()
+</comment>
+   <testCaseGuid>f072e702-81d5-4014-b903-37de3b84435d</testCaseGuid>
+</TestCaseEntity>

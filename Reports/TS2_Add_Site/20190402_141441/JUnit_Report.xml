@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS2_Add_Site" time="22" tests="1" failures="1" errors="0">
+   <testsuite name="TS2_Add_Site" tests="1" failures="1" errors="0" time="22" timestamp="2019-04-02 14:14:47" hostname="ktran - engshare.delphidisplay.com" id="Test Suites/TS2_Add_Site">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\ktran\\Katalon Studio\\cloud_test2\\Reports\\TS2_Add_Site\\20190402_141441"/>
+         <property name="logFiles" value="C:\\Users\\ktran\\Katalon Studio\\cloud_test2\\Reports\\TS2_Add_Site\\20190402_141441\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\ktran\\Katalon Studio\\cloud_test2\\Reports\\TS2_Add_Site\\20190402_141441\\1554239708191.png"/>
+         <property name="hostName" value="ktran - engshare.delphidisplay.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.0.5.10"/>
+         <property name="browser" value="Chrome 73.0.3683.86"/>
+         <property name="hostAddress" value="192.168.11.14"/>
+         <property name="sessionId" value="00f62ff85c222ac2542cc6eb57350e8d"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Login_Tests/TC1_Login_Valid" classname="Test Cases/Login_Tests/TC1_Login_Valid" status="PASSED">
+         <system-out><![CDATA[2019-04-02 14:14:47 - [TEST_CASE][PASSED] - Test Cases/Login_Tests/TC1_Login_Valid: Test Cases/Login_Tests/TC1_Login_Valid
+
+2019-04-02 14:14:49 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-04-02 14:14:49 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-04-02 14:14:49 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-04-02 14:14:54 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-04-02 14:14:54 - [TEST_STEP][PASSED] - navigateToUrl("http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login"): Navigate to 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login' successfully
+
+2019-04-02 14:14:55 - [MESSAGE][PASSED] - Navigate to 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login' successfully
+
+2019-04-02 14:14:55 - [TEST_STEP][PASSED] - startPage = getUrl(): Current window's url is: 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login'
+
+2019-04-02 14:14:55 - [MESSAGE][PASSED] - Current window's url is: 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login'
+
+2019-04-02 14:14:55 - [TEST_STEP][PASSED] - assert startPage == "http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login": null
+
+2019-04-02 14:14:55 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/input_Username"), Username): Text 'ktran' is set on object 'Object Repository/Page_Login/input_Username'
+
+2019-04-02 14:14:56 - [MESSAGE][PASSED] - Text 'ktran' is set on object 'Object Repository/Page_Login/input_Username'
+
+2019-04-02 14:14:56 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/input_Password"), Password): Text 'test!ng!' is set on object 'Object Repository/Page_Login/input_Password'
+
+2019-04-02 14:14:56 - [MESSAGE][PASSED] - Text 'test!ng!' is set on object 'Object Repository/Page_Login/input_Password'
+
+2019-04-02 14:14:56 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/a_Login")): Object: 'Object Repository/Page_Login/a_Login' is clicked on
+
+2019-04-02 14:14:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/a_Login' is clicked on
+
+2019-04-02 14:14:56 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-04-02 14:14:58 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-04-02 14:14:58 - [TEST_STEP][PASSED] - signedInPage = getUrl(): Current window's url is: 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site'
+
+2019-04-02 14:14:59 - [MESSAGE][PASSED] - Current window's url is: 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site'
+
+2019-04-02 14:14:59 - [TEST_STEP][PASSED] - assert signedInPage == "http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site": null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Sites/TC3_Add_Site" classname="Test Cases/Sites/TC3_Add_Site" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Sites/TC3_Add_Site FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_HomePage/Add Site/div_Success'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at TC3_Add_Site.run(TC3_Add_Site:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554239681724.run(TempTestSuite1554239681724.groovy:35)
+"/>
+         <system-out><![CDATA[2019-04-02 14:14:59 - [TEST_CASE][FAILED] - Test Cases/Sites/TC3_Add_Site: Test Cases/Sites/TC3_Add_Site FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_HomePage/Add Site/div_Success'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at TC3_Add_Site.run(TC3_Add_Site:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554239681724.run(TempTestSuite1554239681724.groovy:35)
+
+
+2019-04-02 14:14:59 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/a_Add Site")): Object: 'Object Repository/Page_HomePage/Add Site/a_Add Site' is clicked on
+
+2019-04-02 14:15:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/a_Add Site' is clicked on
+
+2019-04-02 14:15:00 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter Site Name")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Site Name' is clicked on
+
+2019-04-02 14:15:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Site Name' is clicked on
+
+2019-04-02 14:15:00 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input__siteName"), "in and out"): Text 'in and out' is set on object 'Object Repository/Page_HomePage/Add Site/input__siteName'
+
+2019-04-02 14:15:00 - [MESSAGE][PASSED] - Text 'in and out' is set on object 'Object Repository/Page_HomePage/Add Site/input__siteName'
+
+2019-04-02 14:15:00 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter Address")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Address' is clicked on
+
+2019-04-02 14:15:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Address' is clicked on
+
+2019-04-02 14:15:01 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input__siteName"), "in and out 3"): Text 'in and out 3' is set on object 'Object Repository/Page_HomePage/Add Site/input__siteName'
+
+2019-04-02 14:15:01 - [MESSAGE][PASSED] - Text 'in and out 3' is set on object 'Object Repository/Page_HomePage/Add Site/input__siteName'
+
+2019-04-02 14:15:01 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input_Enter Site Name_address"), "123 potato"): Text '123 potato' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Site Name_address'
+
+2019-04-02 14:15:02 - [MESSAGE][PASSED] - Text '123 potato' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Site Name_address'
+
+2019-04-02 14:15:02 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter City")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter City' is clicked on
+
+2019-04-02 14:15:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter City' is clicked on
+
+2019-04-02 14:15:02 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input_Enter Address_city"), "irvine"): Text 'irvine' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Address_city'
+
+2019-04-02 14:15:02 - [MESSAGE][PASSED] - Text 'irvine' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Address_city'
+
+2019-04-02 14:15:02 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter State")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter State' is clicked on
+
+2019-04-02 14:15:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter State' is clicked on
+
+2019-04-02 14:15:02 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input_Enter City_state"), "california"): Text 'california' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter City_state'
+
+2019-04-02 14:15:03 - [MESSAGE][PASSED] - Text 'california' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter City_state'
+
+2019-04-02 14:15:03 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/a_NEXT")): Object: 'Object Repository/Page_HomePage/Add Site/a_NEXT' is clicked on
+
+2019-04-02 14:15:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/a_NEXT' is clicked on
+
+2019-04-02 14:15:03 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input_NEXT_country"), "united states"): Text 'united states' is set on object 'Object Repository/Page_HomePage/Add Site/input_NEXT_country'
+
+2019-04-02 14:15:04 - [MESSAGE][PASSED] - Text 'united states' is set on object 'Object Repository/Page_HomePage/Add Site/input_NEXT_country'
+
+2019-04-02 14:15:04 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter ZIP Code")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter ZIP Code' is clicked on
+
+2019-04-02 14:15:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter ZIP Code' is clicked on
+
+2019-04-02 14:15:04 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input_Enter Country_ZIP"), "95148"): Text '95148' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Country_ZIP'
+
+2019-04-02 14:15:05 - [MESSAGE][PASSED] - Text '95148' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Country_ZIP'
+
+2019-04-02 14:15:05 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter Contact Name")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Contact Name' is clicked on
+
+2019-04-02 14:15:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Contact Name' is clicked on
+
+2019-04-02 14:15:05 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input_Enter ZIP Code_cName"), "Kayla"): Text 'Kayla' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter ZIP Code_cName'
+
+2019-04-02 14:15:05 - [MESSAGE][PASSED] - Text 'Kayla' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter ZIP Code_cName'
+
+2019-04-02 14:15:05 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter Location Phone Number")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Location Phone Number' is clicked on
+
+2019-04-02 14:15:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Location Phone Number' is clicked on
+
+2019-04-02 14:15:05 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input_Enter Contact Name_locationPhone"), "(123)-456-7899"): Text '(123)-456-7899' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Contact Name_locationPhone'
+
+2019-04-02 14:15:06 - [MESSAGE][PASSED] - Text '(123)-456-7899' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Contact Name_locationPhone'
+
+2019-04-02 14:15:06 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/a_NEXT_1")): Object: 'Object Repository/Page_HomePage/Add Site/a_NEXT_1' is clicked on
+
+2019-04-02 14:15:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/a_NEXT_1' is clicked on
+
+2019-04-02 14:15:06 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/a_Next (1)")): Object: 'Object Repository/Page_HomePage/Add Site/a_Next (1)' is clicked on
+
+2019-04-02 14:15:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/a_Next (1)' is clicked on
+
+2019-04-02 14:15:06 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/a_Copy to all")): Object: 'Object Repository/Page_HomePage/Add Site/a_Copy to all' is clicked on
+
+2019-04-02 14:15:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/a_Copy to all' is clicked on
+
+2019-04-02 14:15:07 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_HomePage/Add Site/div_Success"), 20): Object 'Object Repository/Page_HomePage/Add Site/div_Success' is present
+
+2019-04-02 14:15:07 - [MESSAGE][PASSED] - Object 'Object Repository/Page_HomePage/Add Site/div_Success' is present
+
+2019-04-02 14:15:07 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/a_Next_1 (1)")): Object: 'Object Repository/Page_HomePage/Add Site/a_Next_1 (1)' is clicked on
+
+2019-04-02 14:15:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/a_Next_1 (1)' is clicked on
+
+2019-04-02 14:15:07 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/a_Finish")): Object: 'Object Repository/Page_HomePage/Add Site/a_Finish' is clicked on
+
+2019-04-02 14:15:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/a_Finish' is clicked on
+
+2019-04-02 14:15:07 - [TEST_STEP][FAILED] - click(findTestObject("Page_HomePage/Add Site/div_Success")): click(findTestObject("Page_HomePage/Add Site/div_Success")) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_HomePage/Add Site/div_Success'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at TC3_Add_Site.run(TC3_Add_Site:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554239681724.run(TempTestSuite1554239681724.groovy:35)
+
+
+2019-04-02 14:15:08 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Page_HomePage/Add Site/div_Success'
+[[ATTACHMENT|C:\\Users\\ktran\\Katalon Studio\\cloud_test2\\Reports\\TS2_Add_Site\\20190402_141441\\1554239708191.png]]
+
+2019-04-02 14:15:08 - [MESSAGE][FAILED] - click(findTestObject("Page_HomePage/Add Site/div_Success")) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_HomePage/Add Site/div_Success'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at TC3_Add_Site.run(TC3_Add_Site:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554239681724.run(TempTestSuite1554239681724.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-04-02 14:14:59 - [TEST_CASE][FAILED] - Test Cases/Sites/TC3_Add_Site: Test Cases/Sites/TC3_Add_Site FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_HomePage/Add Site/div_Success'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at TC3_Add_Site.run(TC3_Add_Site:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554239681724.run(TempTestSuite1554239681724.groovy:35)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-02 14:14:47 - [TEST_SUITE][FAILED] - TS2_Add_Site: Test Cases/Sites/TC3_Add_Site FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_HomePage/Add Site/div_Success'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at TC3_Add_Site.run(TC3_Add_Site:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554239681724.run(TempTestSuite1554239681724.groovy:35)]]></system-out>
+      <system-err><![CDATA[2019-04-02 14:14:47 - [TEST_SUITE][FAILED] - TS2_Add_Site: Test Cases/Sites/TC3_Add_Site FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Page_HomePage/Add Site/div_Success'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:86)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$3.call(Unknown Source)
+	at TC3_Add_Site.run(TC3_Add_Site:70)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554239681724.run(TempTestSuite1554239681724.groovy:35)]]></system-err>
+   </testsuite>
+</testsuites>

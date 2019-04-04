@@ -1,0 +1,17 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS4_Delete_Site,Chrome 73.0.3683.86,,2019-04-04 13:41:27,2019-04-04 13:42:16,48.116s,FAILED
+,,,,,,
+Test Cases/Login_Tests/TC1_Login_Valid,Chrome 73.0.3683.86,,2019-04-04 13:41:28,2019-04-04 13:41:41,13.123s,PASSED
+"login_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login""",Chrome 73.0.3683.86,,2019-04-04 13:41:29,2019-04-04 13:41:29,0.041s,PASSED
+"home_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site""",Chrome 73.0.3683.86,,2019-04-04 13:41:29,2019-04-04 13:41:29,0.027s,PASSED
+"openBrowser("""")",Chrome 73.0.3683.86,,2019-04-04 13:41:29,2019-04-04 13:41:35,5.554s,PASSED
+navigateToUrl(login_site),Chrome 73.0.3683.86,,2019-04-04 13:41:35,2019-04-04 13:41:36,1.275s,PASSED
+"setText(findTestObject(""Page_Login/input_Username""), findTestData(""Login/TD_Login"").getValue(1, 2))",Chrome 73.0.3683.86,,2019-04-04 13:41:36,2019-04-04 13:41:38,2.386s,PASSED
+"setText(findTestObject(""Page_Login/input_Password""), findTestData(""Login/TD_Login"").getValue(2, 2))",Chrome 73.0.3683.86,,2019-04-04 13:41:38,2019-04-04 13:41:39,0.489s,PASSED
+"click(findTestObject(""Page_Login/a_Login""))",Chrome 73.0.3683.86,,2019-04-04 13:41:39,2019-04-04 13:41:39,0.358s,PASSED
+delay(2),Chrome 73.0.3683.86,,2019-04-04 13:41:39,2019-04-04 13:41:41,2.041s,PASSED
+signedInPage = getUrl(),Chrome 73.0.3683.86,,2019-04-04 13:41:41,2019-04-04 13:41:41,0.061s,PASSED
+assert signedInPage == home_site,Chrome 73.0.3683.86,,2019-04-04 13:41:41,2019-04-04 13:41:41,0.003s,PASSED
+,,,,,,
+Test Cases/Sites/Delete Site/TC8_Delete_Multiple_Sites,Chrome 73.0.3683.86,,2019-04-04 13:41:41,2019-04-04 13:42:16,34.231s,FAILED
+"for ([num = 0, num <= 2, (num++)])",Chrome 73.0.3683.86,,2019-04-04 13:41:42,2019-04-04 13:42:16,33.502s,FAILED

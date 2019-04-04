@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS4_Delete_Site,Chrome 73.0.3683.86,,2019-04-04 13:23:41,2019-04-04 13:23:58,16.268s,PASSED
+,,,,,,
+Test Cases/Login_Tests/TC1_Login_Valid,Chrome 73.0.3683.86,,2019-04-04 13:23:42,2019-04-04 13:23:55,12.911s,PASSED
+"login_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login""",Chrome 73.0.3683.86,,2019-04-04 13:23:43,2019-04-04 13:23:43,0.003s,PASSED
+"home_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site""",Chrome 73.0.3683.86,,2019-04-04 13:23:43,2019-04-04 13:23:43,0.002s,PASSED
+"openBrowser("""")",Chrome 73.0.3683.86,,2019-04-04 13:23:43,2019-04-04 13:23:49,5.580s,PASSED
+navigateToUrl(login_site),Chrome 73.0.3683.86,,2019-04-04 13:23:49,2019-04-04 13:23:50,1.483s,PASSED
+"setText(findTestObject(""Page_Login/input_Username""), findTestData(""Login/TD_Login"").getValue(1, 2))",Chrome 73.0.3683.86,,2019-04-04 13:23:50,2019-04-04 13:23:52,2.309s,PASSED
+"setText(findTestObject(""Page_Login/input_Password""), findTestData(""Login/TD_Login"").getValue(2, 2))",Chrome 73.0.3683.86,,2019-04-04 13:23:52,2019-04-04 13:23:53,0.315s,PASSED
+"click(findTestObject(""Page_Login/a_Login""))",Chrome 73.0.3683.86,,2019-04-04 13:23:53,2019-04-04 13:23:53,0.202s,PASSED
+delay(2),Chrome 73.0.3683.86,,2019-04-04 13:23:53,2019-04-04 13:23:55,2.059s,PASSED
+signedInPage = getUrl(),Chrome 73.0.3683.86,,2019-04-04 13:23:55,2019-04-04 13:23:55,0.111s,PASSED
+assert signedInPage == home_site,Chrome 73.0.3683.86,,2019-04-04 13:23:55,2019-04-04 13:23:55,0.003s,PASSED
+,,,,,,
+Test Cases/Sites/Delete Site/TC7_Delete_One_Site,Chrome 73.0.3683.86,,2019-04-04 13:23:55,2019-04-04 13:23:58,2.667s,PASSED
+"click(findTestObject(""Page_HomePage/Site/Delete Site/delete_button""))",Chrome 73.0.3683.86,,2019-04-04 13:23:56,2019-04-04 13:23:56,0.151s,PASSED
+"click(findTestObject(""Page_HomePage/Site/Delete Site/span_Yes""))",Chrome 73.0.3683.86,,2019-04-04 13:23:56,2019-04-04 13:23:56,0.244s,PASSED
+"click(findTestObject(""Page_HomePage/Site/Delete Site/div_Site has been deleted successfully.""))",Chrome 73.0.3683.86,,2019-04-04 13:23:56,2019-04-04 13:23:57,0.659s,PASSED
+closeBrowser(),Chrome 73.0.3683.86,,2019-04-04 13:23:57,2019-04-04 13:23:58,1.080s,PASSED

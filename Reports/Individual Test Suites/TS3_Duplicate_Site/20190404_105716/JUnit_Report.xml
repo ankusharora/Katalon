@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS3_Duplicate_Site" time="14" tests="2" failures="0" errors="0">
+   <testsuite name="TS3_Duplicate_Site" tests="2" failures="0" errors="0" time="14" timestamp="2019-04-04 10:57:21" hostname="ktran - engshare.delphidisplay.com" id="Test Suites/Individual Test Suites/TS3_Duplicate_Site">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\ktran\\Katalon Studio\\cloud_test2\\Reports\\Individual Test Suites\\TS3_Duplicate_Site\\20190404_105716"/>
+         <property name="logFiles" value="C:\\Users\\ktran\\Katalon Studio\\cloud_test2\\Reports\\Individual Test Suites\\TS3_Duplicate_Site\\20190404_105716\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="ktran - engshare.delphidisplay.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.0.5.10"/>
+         <property name="browser" value="Chrome 73.0.3683.86"/>
+         <property name="hostAddress" value="192.168.11.14"/>
+         <property name="sessionId" value="239cb5e31d568c70e3c612a56308f09f"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Login_Tests/TC1_Login_Valid" classname="Test Cases/Login_Tests/TC1_Login_Valid" status="PASSED">
+         <system-out><![CDATA[2019-04-04 10:57:21 - [TEST_CASE][PASSED] - Test Cases/Login_Tests/TC1_Login_Valid: Test Cases/Login_Tests/TC1_Login_Valid
+
+2019-04-04 10:57:22 - [TEST_STEP][PASSED] - login_site = "http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login": null
+
+2019-04-04 10:57:22 - [TEST_STEP][PASSED] - home_site = "http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site": null
+
+2019-04-04 10:57:22 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-04-04 10:57:23 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-04-04 10:57:23 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-04-04 10:57:27 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-04-04 10:57:27 - [TEST_STEP][PASSED] - navigateToUrl(login_site): Navigate to 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login' successfully
+
+2019-04-04 10:57:28 - [MESSAGE][PASSED] - Navigate to 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login' successfully
+
+2019-04-04 10:57:28 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/input_Username"), findTestData("Login/TD_Login").getValue(1, 1)): Text 'ktran' is set on object 'Object Repository/Page_Login/input_Username'
+
+2019-04-04 10:57:31 - [MESSAGE][PASSED] - Text 'ktran' is set on object 'Object Repository/Page_Login/input_Username'
+
+2019-04-04 10:57:31 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/input_Password"), findTestData("Login/TD_Login").getValue(2, 1)): Text 'test!ng1' is set on object 'Object Repository/Page_Login/input_Password'
+
+2019-04-04 10:57:31 - [MESSAGE][PASSED] - Text 'test!ng1' is set on object 'Object Repository/Page_Login/input_Password'
+
+2019-04-04 10:57:31 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/a_Login")): Object: 'Object Repository/Page_Login/a_Login' is clicked on
+
+2019-04-04 10:57:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/a_Login' is clicked on
+
+2019-04-04 10:57:31 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-04-04 10:57:33 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-04-04 10:57:33 - [TEST_STEP][PASSED] - signedInPage = getUrl(): Current window's url is: 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site'
+
+2019-04-04 10:57:33 - [MESSAGE][PASSED] - Current window's url is: 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site'
+
+2019-04-04 10:57:33 - [TEST_STEP][PASSED] - assert signedInPage == home_site: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Sites/Add Site/TC6_Add_Duplicate_Site" classname="Test Cases/Sites/Add Site/TC6_Add_Duplicate_Site" status="PASSED">
+         <system-out><![CDATA[2019-04-04 10:57:33 - [TEST_CASE][PASSED] - Test Cases/Sites/Add Site/TC6_Add_Duplicate_Site: Test Cases/Sites/Add Site/TC6_Add_Duplicate_Site
+
+2019-04-04 10:57:34 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/a_Add Site")): Object: 'Object Repository/Page_HomePage/Add Site/a_Add Site' is clicked on
+
+2019-04-04 10:57:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/a_Add Site' is clicked on
+
+2019-04-04 10:57:34 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter Site Name")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Site Name' is clicked on
+
+2019-04-04 10:57:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Site Name' is clicked on
+
+2019-04-04 10:57:34 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input__siteName"), findTestData("Sites/TD_Sites").getValue(1, 1)): Text 'McDonald's 6' is set on object 'Object Repository/Page_HomePage/Add Site/input__siteName'
+
+2019-04-04 10:57:35 - [MESSAGE][PASSED] - Text 'McDonald's 6' is set on object 'Object Repository/Page_HomePage/Add Site/input__siteName'
+
+2019-04-04 10:57:35 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter Address")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Address' is clicked on
+
+2019-04-04 10:57:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Address' is clicked on
+
+2019-04-04 10:57:35 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_HomePage/Duplicate Site/div_This site name already exists."), 3): Object 'Object Repository/Page_HomePage/Duplicate Site/div_This site name already exists.' is present
+
+2019-04-04 10:57:35 - [MESSAGE][PASSED] - Object 'Object Repository/Page_HomePage/Duplicate Site/div_This site name already exists.' is present]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-04 10:57:21 - [TEST_SUITE][PASSED] - TS3_Duplicate_Site: Test Cases/Sites/Add Site/TC6_Add_Duplicate_Site]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

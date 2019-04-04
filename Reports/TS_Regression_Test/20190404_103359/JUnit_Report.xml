@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_Regression_Test" time="27" tests="2" failures="1" errors="0">
+   <testsuite name="TS_Regression_Test" tests="2" failures="1" errors="0" time="27" timestamp="2019-04-04 10:34:02" hostname="ktran - engshare.delphidisplay.com" id="Test Suites/TS_Regression_Test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\ktran\\Katalon Studio\\cloud_test2\\Reports\\TS_Regression_Test\\20190404_103359"/>
+         <property name="logFiles" value="C:\\Users\\ktran\\Katalon Studio\\cloud_test2\\Reports\\TS_Regression_Test\\20190404_103359\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\ktran\\Katalon Studio\\cloud_test2\\Reports\\TS_Regression_Test\\20190404_103359\\1554399269961.png"/>
+         <property name="hostName" value="ktran - engshare.delphidisplay.com"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.0.5.10"/>
+         <property name="browser" value="Chrome 73.0.3683.86"/>
+         <property name="hostAddress" value="192.168.11.14"/>
+         <property name="sessionId" value="21581949aeec87f68e4d18d062a08857"/>
+         <property name="seleniumVersion" value="3.7.1"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Login_Tests/TC2_Login_Invalid" classname="Test Cases/Login_Tests/TC2_Login_Invalid" status="PASSED">
+         <system-out><![CDATA[2019-04-04 10:34:03 - [TEST_CASE][PASSED] - Test Cases/Login_Tests/TC2_Login_Invalid: Test Cases/Login_Tests/TC2_Login_Invalid
+
+2019-04-04 10:34:04 - [TEST_STEP][PASSED] - login_site = "http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login": null
+
+2019-04-04 10:34:04 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-04-04 10:34:05 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-04-04 10:34:05 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2019-04-04 10:34:09 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-04-04 10:34:09 - [TEST_STEP][PASSED] - navigateToUrl(login_site): Navigate to 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login' successfully
+
+2019-04-04 10:34:11 - [MESSAGE][PASSED] - Navigate to 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login' successfully
+
+2019-04-04 10:34:11 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/input_Username"), invalid_user): Text 'user
+' is set on object 'Object Repository/Page_Login/input_Username'
+
+2019-04-04 10:34:12 - [MESSAGE][PASSED] - Text 'user
+' is set on object 'Object Repository/Page_Login/input_Username'
+
+2019-04-04 10:34:12 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/input_Password"), invalid_password): Text 'invalid
+' is set on object 'Object Repository/Page_Login/input_Password'
+
+2019-04-04 10:34:12 - [MESSAGE][PASSED] - Text 'invalid
+' is set on object 'Object Repository/Page_Login/input_Password'
+
+2019-04-04 10:34:12 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/a_Login")): Object: 'Object Repository/Page_Login/a_Login' is clicked on
+
+2019-04-04 10:34:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/a_Login' is clicked on
+
+2019-04-04 10:34:13 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_Login/div_Invalid username or password"), 3): Object 'Object Repository/Page_Login/div_Invalid username or password' is present
+
+2019-04-04 10:34:13 - [MESSAGE][PASSED] - Object 'Object Repository/Page_Login/div_Invalid username or password' is present
+
+2019-04-04 10:34:13 - [TEST_STEP][PASSED] - current_site = getUrl(): Current window's url is: 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login'
+
+2019-04-04 10:34:13 - [MESSAGE][PASSED] - Current window's url is: 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login'
+
+2019-04-04 10:34:13 - [TEST_STEP][PASSED] - assert current_site == login_site: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login_Tests/TC1_Login_Valid" classname="Test Cases/Login_Tests/TC1_Login_Valid" status="PASSED">
+         <system-out><![CDATA[2019-04-04 10:34:13 - [TEST_CASE][PASSED] - Test Cases/Login_Tests/TC1_Login_Valid: Test Cases/Login_Tests/TC1_Login_Valid
+
+2019-04-04 10:34:14 - [TEST_STEP][PASSED] - login_site = "http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login": null
+
+2019-04-04 10:34:14 - [TEST_STEP][PASSED] - home_site = "http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site": null
+
+2019-04-04 10:34:14 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2019-04-04 10:34:14 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2019-04-04 10:34:15 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2019-04-04 10:34:18 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2019-04-04 10:34:18 - [TEST_STEP][PASSED] - navigateToUrl(login_site): Navigate to 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login' successfully
+
+2019-04-04 10:34:19 - [MESSAGE][PASSED] - Navigate to 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login' successfully
+
+2019-04-04 10:34:19 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/input_Username"), findTestData("Login/TD_Login").getValue(1, 1)): Text 'ktran' is set on object 'Object Repository/Page_Login/input_Username'
+
+2019-04-04 10:34:22 - [MESSAGE][PASSED] - Text 'ktran' is set on object 'Object Repository/Page_Login/input_Username'
+
+2019-04-04 10:34:22 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/input_Password"), findTestData("Login/TD_Login").getValue(2, 1)): Text 'test!ng1' is set on object 'Object Repository/Page_Login/input_Password'
+
+2019-04-04 10:34:22 - [MESSAGE][PASSED] - Text 'test!ng1' is set on object 'Object Repository/Page_Login/input_Password'
+
+2019-04-04 10:34:22 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/a_Login")): Object: 'Object Repository/Page_Login/a_Login' is clicked on
+
+2019-04-04 10:34:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/a_Login' is clicked on
+
+2019-04-04 10:34:22 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2019-04-04 10:34:24 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2019-04-04 10:34:24 - [TEST_STEP][PASSED] - signedInPage = getUrl(): Current window's url is: 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site'
+
+2019-04-04 10:34:24 - [MESSAGE][PASSED] - Current window's url is: 'http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site'
+
+2019-04-04 10:34:24 - [TEST_STEP][PASSED] - assert signedInPage == home_site: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Sites/TC4_Add_Site" classname="Test Cases/Sites/TC4_Add_Site" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Sites/TC4_Add_Site FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to set text 'United States' of object 'Object Repository/Page_HomePage/Add Site/input_NEXT_country'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at TC4_Add_Site.run(TC4_Add_Site:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554399239390.run(TempTestSuite1554399239390.groovy:35)
+"/>
+         <system-out><![CDATA[2019-04-04 10:34:24 - [TEST_CASE][FAILED] - Test Cases/Sites/TC4_Add_Site: Test Cases/Sites/TC4_Add_Site FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to set text 'United States' of object 'Object Repository/Page_HomePage/Add Site/input_NEXT_country'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at TC4_Add_Site.run(TC4_Add_Site:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554399239390.run(TempTestSuite1554399239390.groovy:35)
+
+
+2019-04-04 10:34:25 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/a_Add Site")): Object: 'Object Repository/Page_HomePage/Add Site/a_Add Site' is clicked on
+
+2019-04-04 10:34:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/a_Add Site' is clicked on
+
+2019-04-04 10:34:25 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter Site Name")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Site Name' is clicked on
+
+2019-04-04 10:34:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Site Name' is clicked on
+
+2019-04-04 10:34:26 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input__siteName"), findTestData("Sites/TD_Sites").getValue(1, 1)): Text 'McDonald's 4' is set on object 'Object Repository/Page_HomePage/Add Site/input__siteName'
+
+2019-04-04 10:34:26 - [MESSAGE][PASSED] - Text 'McDonald's 4' is set on object 'Object Repository/Page_HomePage/Add Site/input__siteName'
+
+2019-04-04 10:34:26 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter Address")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Address' is clicked on
+
+2019-04-04 10:34:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter Address' is clicked on
+
+2019-04-04 10:34:27 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input_Enter Site Name_address"), findTestData("Sites/TD_Sites").getValue(2, 1)): Text '11321 Talbert Ave' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Site Name_address'
+
+2019-04-04 10:34:27 - [MESSAGE][PASSED] - Text '11321 Talbert Ave' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Site Name_address'
+
+2019-04-04 10:34:27 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter City")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter City' is clicked on
+
+2019-04-04 10:34:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter City' is clicked on
+
+2019-04-04 10:34:28 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input_Enter Address_city"), findTestData("Sites/TD_Sites").getValue(3, 1)): Text 'Fountain Valley' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Address_city'
+
+2019-04-04 10:34:28 - [MESSAGE][PASSED] - Text 'Fountain Valley' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter Address_city'
+
+2019-04-04 10:34:28 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/label_Enter State")): Object: 'Object Repository/Page_HomePage/Add Site/label_Enter State' is clicked on
+
+2019-04-04 10:34:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/label_Enter State' is clicked on
+
+2019-04-04 10:34:29 - [TEST_STEP][PASSED] - setText(findTestObject("Page_HomePage/Add Site/input_Enter City_state"), findTestData("Sites/TD_Sites").getValue(4, 1)): Text 'California' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter City_state'
+
+2019-04-04 10:34:29 - [MESSAGE][PASSED] - Text 'California' is set on object 'Object Repository/Page_HomePage/Add Site/input_Enter City_state'
+
+2019-04-04 10:34:29 - [TEST_STEP][PASSED] - click(findTestObject("Page_HomePage/Add Site/a_NEXT")): Object: 'Object Repository/Page_HomePage/Add Site/a_NEXT' is clicked on
+
+2019-04-04 10:34:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_HomePage/Add Site/a_NEXT' is clicked on
+
+2019-04-04 10:34:29 - [TEST_STEP][FAILED] - setText(findTestObject("Page_HomePage/Add Site/input_NEXT_country"), findTestData("Sites/TD_Sites").getValue(5, 1)): setText(findTestObject("Page_HomePage/Add Site/input_NEXT_country"), findTestData("Sites/TD_Sites").getValue(5, 1)) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to set text 'United States' of object 'Object Repository/Page_HomePage/Add Site/input_NEXT_country'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at TC4_Add_Site.run(TC4_Add_Site:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554399239390.run(TempTestSuite1554399239390.groovy:35)
+
+
+2019-04-04 10:34:30 - [MESSAGE][FAILED] - Unable to set text 'United States' of object 'Object Repository/Page_HomePage/Add Site/input_NEXT_country'
+[[ATTACHMENT|C:\\Users\\ktran\\Katalon Studio\\cloud_test2\\Reports\\TS_Regression_Test\\20190404_103359\\1554399269961.png]]
+
+2019-04-04 10:34:30 - [MESSAGE][FAILED] - setText(findTestObject("Page_HomePage/Add Site/input_NEXT_country"), findTestData("Sites/TD_Sites").getValue(5, 1)) FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to set text 'United States' of object 'Object Repository/Page_HomePage/Add Site/input_NEXT_country'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at TC4_Add_Site.run(TC4_Add_Site:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554399239390.run(TempTestSuite1554399239390.groovy:35)]]></system-out>
+         <system-err><![CDATA[2019-04-04 10:34:24 - [TEST_CASE][FAILED] - Test Cases/Sites/TC4_Add_Site: Test Cases/Sites/TC4_Add_Site FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to set text 'United States' of object 'Object Repository/Page_HomePage/Add Site/input_NEXT_country'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at TC4_Add_Site.run(TC4_Add_Site:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554399239390.run(TempTestSuite1554399239390.groovy:35)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-04 10:34:02 - [TEST_SUITE][FAILED] - TS_Regression_Test: Test Cases/Sites/TC4_Add_Site FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to set text 'United States' of object 'Object Repository/Page_HomePage/Add Site/input_NEXT_country'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at TC4_Add_Site.run(TC4_Add_Site:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554399239390.run(TempTestSuite1554399239390.groovy:35)]]></system-out>
+      <system-err><![CDATA[2019-04-04 10:34:02 - [TEST_SUITE][FAILED] - TS_Regression_Test: Test Cases/Sites/TC4_Add_Site FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to set text 'United States' of object 'Object Repository/Page_HomePage/Add Site/input_NEXT_country'
+	at com.kms.katalon.core.keyword.internal.KeywordMain.stepFailed(KeywordMain.groovy:48)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:65)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:27)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.setText(SetTextKeyword.groovy:65)
+	at com.kms.katalon.core.webui.keyword.builtin.SetTextKeyword.execute(SetTextKeyword.groovy:37)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:56)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.setText(WebUiBuiltInKeywords.groovy:950)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$setText$1.call(Unknown Source)
+	at TC4_Add_Site.run(TC4_Add_Site:40)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1554399239390.run(TempTestSuite1554399239390.groovy:35)]]></system-err>
+   </testsuite>
+</testsuites>

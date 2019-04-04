@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS3_Device,Chrome 73.0.3683.86,,2019-04-04 14:27:32,2019-04-04 14:27:52,20.040s,PASSED
+,,,,,,
+Test Cases/Login_Tests/TC1_Login_Valid,Chrome 73.0.3683.86,,2019-04-04 14:27:33,2019-04-04 14:27:48,15.618s,PASSED
+"login_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login""",Chrome 73.0.3683.86,,2019-04-04 14:27:34,2019-04-04 14:27:34,0.055s,PASSED
+"home_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site""",Chrome 73.0.3683.86,,2019-04-04 14:27:34,2019-04-04 14:27:34,0.066s,PASSED
+"openBrowser("""")",Chrome 73.0.3683.86,,2019-04-04 14:27:34,2019-04-04 14:27:41,6.951s,PASSED
+navigateToUrl(login_site),Chrome 73.0.3683.86,,2019-04-04 14:27:41,2019-04-04 14:27:42,1.218s,PASSED
+"setText(findTestObject(""Page_Login/input_Username""), findTestData(""Login/TD_Login"").getValue(1, 2))",Chrome 73.0.3683.86,,2019-04-04 14:27:42,2019-04-04 14:27:45,3.371s,PASSED
+"setText(findTestObject(""Page_Login/input_Password""), findTestData(""Login/TD_Login"").getValue(2, 2))",Chrome 73.0.3683.86,,2019-04-04 14:27:45,2019-04-04 14:27:46,0.471s,PASSED
+"click(findTestObject(""Page_Login/a_Login""))",Chrome 73.0.3683.86,,2019-04-04 14:27:46,2019-04-04 14:27:46,0.275s,PASSED
+delay(2),Chrome 73.0.3683.86,,2019-04-04 14:27:46,2019-04-04 14:27:48,2.055s,PASSED
+signedInPage = getUrl(),Chrome 73.0.3683.86,,2019-04-04 14:27:48,2019-04-04 14:27:48,0.222s,PASSED
+assert signedInPage == home_site,Chrome 73.0.3683.86,,2019-04-04 14:27:48,2019-04-04 14:27:48,0.004s,PASSED
+,,,,,,
+Test Cases/Devices/Add Device/TC9_Add_One_Device,Chrome 73.0.3683.86,,2019-04-04 14:27:48,2019-04-04 14:27:52,3.526s,PASSED
+"click(findTestObject(""Page_HomePage/Add Device/Add Device/a_Add Device""))",Chrome 73.0.3683.86,,2019-04-04 14:27:50,2019-04-04 14:27:50,0.288s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Device/Add Device/input__deviceName""), ""device 1"")",Chrome 73.0.3683.86,,2019-04-04 14:27:50,2019-04-04 14:27:50,0.644s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Device/Add Device/input_Enter Device Name_description""), ""dev"")",Chrome 73.0.3683.86,,2019-04-04 14:27:50,2019-04-04 14:27:51,0.378s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Device/Add Device/input_Enter Description_serialNumber""), ""11"")",Chrome 73.0.3683.86,,2019-04-04 14:27:51,2019-04-04 14:27:51,0.260s,PASSED
+"selectOptionByValue(findTestObject(""Page_HomePage/Add Device/Add Device/select_Select Siteyes""), ""1: 585"", true)",Chrome 73.0.3683.86,,2019-04-04 14:27:51,2019-04-04 14:27:52,0.492s,PASSED
+"click(findTestObject(""Page_HomePage/Add Device/Add Device/a_FINISH""))",Chrome 73.0.3683.86,,2019-04-04 14:27:52,2019-04-04 14:27:52,0.235s,PASSED
+"verifyElementPresent(findTestObject(""Page_HomePage/Add Device/Add Device/div_Device added successfully.""), 2)",Chrome 73.0.3683.86,,2019-04-04 14:27:52,2019-04-04 14:27:52,0.147s,PASSED

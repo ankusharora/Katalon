@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS2_Site,Chrome 73.0.3683.86,,2019-04-04 13:49:03,2019-04-04 13:49:37,34.300s,PASSED
+,,,,,,
+Test Cases/Login_Tests/TC1_Login_Valid,Chrome 73.0.3683.86,,2019-04-04 13:49:04,2019-04-04 13:49:17,12.834s,PASSED
+"login_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login""",Chrome 73.0.3683.86,,2019-04-04 13:49:05,2019-04-04 13:49:05,0.003s,PASSED
+"home_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site""",Chrome 73.0.3683.86,,2019-04-04 13:49:05,2019-04-04 13:49:05,0.003s,PASSED
+"openBrowser("""")",Chrome 73.0.3683.86,,2019-04-04 13:49:05,2019-04-04 13:49:10,5.695s,PASSED
+navigateToUrl(login_site),Chrome 73.0.3683.86,,2019-04-04 13:49:10,2019-04-04 13:49:11,1.166s,PASSED
+"setText(findTestObject(""Page_Login/input_Username""), findTestData(""Login/TD_Login"").getValue(1, 2))",Chrome 73.0.3683.86,,2019-04-04 13:49:11,2019-04-04 13:49:14,2.267s,PASSED
+"setText(findTestObject(""Page_Login/input_Password""), findTestData(""Login/TD_Login"").getValue(2, 2))",Chrome 73.0.3683.86,,2019-04-04 13:49:14,2019-04-04 13:49:14,0.454s,PASSED
+"click(findTestObject(""Page_Login/a_Login""))",Chrome 73.0.3683.86,,2019-04-04 13:49:14,2019-04-04 13:49:14,0.213s,PASSED
+delay(2),Chrome 73.0.3683.86,,2019-04-04 13:49:14,2019-04-04 13:49:16,2.064s,PASSED
+signedInPage = getUrl(),Chrome 73.0.3683.86,,2019-04-04 13:49:16,2019-04-04 13:49:17,0.173s,PASSED
+assert signedInPage == home_site,Chrome 73.0.3683.86,,2019-04-04 13:49:17,2019-04-04 13:49:17,0.003s,PASSED
+,,,,,,
+Test Cases/Sites/Add Site/TC5_Add_Multiple_Sites,Chrome 73.0.3683.86,,2019-04-04 13:49:17,2019-04-04 13:49:36,19.511s,PASSED
+"for ([row = 2, row <= findTestData(""Sites/TD_Sites"").getRowNumbers(), (row++)])",Chrome 73.0.3683.86,,2019-04-04 13:49:17,2019-04-04 13:49:36,18.580s,PASSED
+,,,,,,
+Test Cases/Sites/Delete Site/TC8_Delete_Multiple_Sites,Chrome 73.0.3683.86,,2019-04-04 13:49:36,2019-04-04 13:49:37,1.356s,PASSED
+"for ([row = 2, row <= findTestData(""Sites/TD_Sites"").getRowNumbers(), (row++)])",Chrome 73.0.3683.86,,2019-04-04 13:49:37,2019-04-04 13:49:37,0.915s,PASSED

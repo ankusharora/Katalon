@@ -1,0 +1,20 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS4_Delete_Site,Chrome 73.0.3683.86,,2019-04-04 13:38:29,2019-04-04 13:39:04,34.860s,ERROR
+,,,,,,
+Test Cases/Login_Tests/TC1_Login_Valid,Chrome 73.0.3683.86,,2019-04-04 13:38:30,2019-04-04 13:38:43,13.637s,PASSED
+"login_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login""",Chrome 73.0.3683.86,,2019-04-04 13:38:31,2019-04-04 13:38:31,0.040s,PASSED
+"home_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site""",Chrome 73.0.3683.86,,2019-04-04 13:38:31,2019-04-04 13:38:31,0.055s,PASSED
+"openBrowser("""")",Chrome 73.0.3683.86,,2019-04-04 13:38:31,2019-04-04 13:38:37,6.015s,PASSED
+navigateToUrl(login_site),Chrome 73.0.3683.86,,2019-04-04 13:38:37,2019-04-04 13:38:38,1.257s,PASSED
+"setText(findTestObject(""Page_Login/input_Username""), findTestData(""Login/TD_Login"").getValue(1, 2))",Chrome 73.0.3683.86,,2019-04-04 13:38:38,2019-04-04 13:38:41,2.643s,PASSED
+"setText(findTestObject(""Page_Login/input_Password""), findTestData(""Login/TD_Login"").getValue(2, 2))",Chrome 73.0.3683.86,,2019-04-04 13:38:41,2019-04-04 13:38:41,0.394s,PASSED
+"click(findTestObject(""Page_Login/a_Login""))",Chrome 73.0.3683.86,,2019-04-04 13:38:41,2019-04-04 13:38:41,0.166s,PASSED
+delay(2),Chrome 73.0.3683.86,,2019-04-04 13:38:41,2019-04-04 13:38:43,2.050s,PASSED
+signedInPage = getUrl(),Chrome 73.0.3683.86,,2019-04-04 13:38:43,2019-04-04 13:38:43,0.172s,PASSED
+assert signedInPage == home_site,Chrome 73.0.3683.86,,2019-04-04 13:38:43,2019-04-04 13:38:43,0.002s,PASSED
+,,,,,,
+Test Cases/Sites/Add Site/TC5_Add_Multiple_Sites,Chrome 73.0.3683.86,,2019-04-04 13:38:43,2019-04-04 13:39:03,19.863s,PASSED
+"for ([row = 2, row <= findTestData(""Sites/TD_Sites"").getRowNumbers(), (row++)])",Chrome 73.0.3683.86,,2019-04-04 13:38:44,2019-04-04 13:39:03,18.951s,PASSED
+,,,,,,
+Test Cases/Sites/Delete Site/TC8_Delete_Multiple_Sites,Chrome 73.0.3683.86,,2019-04-04 13:39:03,2019-04-04 13:39:04,0.742s,ERROR
+"for ([num = 0, num <= 2, (num++)])",Chrome 73.0.3683.86,,2019-04-04 13:39:04,2019-04-04 13:39:04,0.154s,ERROR

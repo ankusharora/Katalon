@@ -1,0 +1,66 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS_Regression_Test,Chrome 73.0.3683.86,,2019-04-04 11:02:46,2019-04-04 11:03:32,45.188s,FAILED
+,,,,,,
+Test Cases/Login_Tests/TC2_Login_Invalid,Chrome 73.0.3683.86,,2019-04-04 11:02:47,2019-04-04 11:02:56,8.961s,PASSED
+"login_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login""",Chrome 73.0.3683.86,,2019-04-04 11:02:48,2019-04-04 11:02:48,0.023s,PASSED
+"openBrowser("""")",Chrome 73.0.3683.86,,2019-04-04 11:02:48,2019-04-04 11:02:53,5.401s,PASSED
+navigateToUrl(login_site),Chrome 73.0.3683.86,,2019-04-04 11:02:53,2019-04-04 11:02:55,1.081s,PASSED
+"setText(findTestObject(""Page_Login/input_Username""), invalid_user)",Chrome 73.0.3683.86,,2019-04-04 11:02:55,2019-04-04 11:02:55,0.768s,PASSED
+"setText(findTestObject(""Page_Login/input_Password""), invalid_password)",Chrome 73.0.3683.86,,2019-04-04 11:02:55,2019-04-04 11:02:56,0.279s,PASSED
+"click(findTestObject(""Page_Login/a_Login""))",Chrome 73.0.3683.86,,2019-04-04 11:02:56,2019-04-04 11:02:56,0.242s,PASSED
+"verifyElementPresent(findTestObject(""Page_Login/div_Invalid username or password""), 3)",Chrome 73.0.3683.86,,2019-04-04 11:02:56,2019-04-04 11:02:56,0.077s,PASSED
+current_site = getUrl(),Chrome 73.0.3683.86,,2019-04-04 11:02:56,2019-04-04 11:02:56,0.126s,PASSED
+assert current_site == login_site,Chrome 73.0.3683.86,,2019-04-04 11:02:56,2019-04-04 11:02:56,0.002s,PASSED
+,,,,,,
+Test Cases/Login_Tests/TC1_Login_Valid,Chrome 73.0.3683.86,,2019-04-04 11:02:56,2019-04-04 11:03:07,10.787s,PASSED
+"login_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/login""",Chrome 73.0.3683.86,,2019-04-04 11:02:57,2019-04-04 11:02:57,0.001s,PASSED
+"home_site = ""http://ec2-54-148-80-155.us-west-2.compute.amazonaws.com:8080/Sites/#/site""",Chrome 73.0.3683.86,,2019-04-04 11:02:57,2019-04-04 11:02:57,0.001s,PASSED
+"openBrowser("""")",Chrome 73.0.3683.86,,2019-04-04 11:02:57,2019-04-04 11:03:01,3.975s,PASSED
+navigateToUrl(login_site),Chrome 73.0.3683.86,,2019-04-04 11:03:01,2019-04-04 11:03:02,1.006s,PASSED
+"setText(findTestObject(""Page_Login/input_Username""), findTestData(""Login/TD_Login"").getValue(1, 1))",Chrome 73.0.3683.86,,2019-04-04 11:03:02,2019-04-04 11:03:04,2.615s,PASSED
+"setText(findTestObject(""Page_Login/input_Password""), findTestData(""Login/TD_Login"").getValue(2, 1))",Chrome 73.0.3683.86,,2019-04-04 11:03:04,2019-04-04 11:03:05,0.400s,PASSED
+"click(findTestObject(""Page_Login/a_Login""))",Chrome 73.0.3683.86,,2019-04-04 11:03:05,2019-04-04 11:03:05,0.175s,PASSED
+delay(2),Chrome 73.0.3683.86,,2019-04-04 11:03:05,2019-04-04 11:03:07,2.043s,PASSED
+signedInPage = getUrl(),Chrome 73.0.3683.86,,2019-04-04 11:03:07,2019-04-04 11:03:07,0.023s,PASSED
+assert signedInPage == home_site,Chrome 73.0.3683.86,,2019-04-04 11:03:07,2019-04-04 11:03:07,0.000s,PASSED
+,,,,,,
+Test Cases/Sites/Add Site/TC4_Add_One_Site,Chrome 73.0.3683.86,,2019-04-04 11:03:07,2019-04-04 11:03:18,10.814s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/a_Add Site""))",Chrome 73.0.3683.86,,2019-04-04 11:03:07,2019-04-04 11:03:08,0.316s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/label_Enter Site Name""))",Chrome 73.0.3683.86,,2019-04-04 11:03:08,2019-04-04 11:03:08,0.237s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Site/input__siteName""), findTestData(""Sites/TD_Sites"").getValue(1, 1))",Chrome 73.0.3683.86,,2019-04-04 11:03:08,2019-04-04 11:03:09,0.662s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/label_Enter Address""))",Chrome 73.0.3683.86,,2019-04-04 11:03:09,2019-04-04 11:03:09,0.222s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Site/input_Enter Site Name_address""), findTestData(""Sites/TD_Sites"").getValue(2, 1))",Chrome 73.0.3683.86,,2019-04-04 11:03:09,2019-04-04 11:03:09,0.587s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/label_Enter City""))",Chrome 73.0.3683.86,,2019-04-04 11:03:09,2019-04-04 11:03:10,0.169s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Site/input_Enter Address_city""), findTestData(""Sites/TD_Sites"").getValue(3, 1))",Chrome 73.0.3683.86,,2019-04-04 11:03:10,2019-04-04 11:03:10,0.517s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/label_Enter State""))",Chrome 73.0.3683.86,,2019-04-04 11:03:10,2019-04-04 11:03:10,0.182s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Site/input_Enter City_state""), findTestData(""Sites/TD_Sites"").getValue(4, 1))",Chrome 73.0.3683.86,,2019-04-04 11:03:10,2019-04-04 11:03:11,0.439s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/a_NEXT""))",Chrome 73.0.3683.86,,2019-04-04 11:03:11,2019-04-04 11:03:11,0.211s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Site/input_NEXT_country""), findTestData(""Sites/TD_Sites"").getValue(5, 1))",Chrome 73.0.3683.86,,2019-04-04 11:03:11,2019-04-04 11:03:12,0.668s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/label_Enter ZIP Code""))",Chrome 73.0.3683.86,,2019-04-04 11:03:12,2019-04-04 11:03:12,0.371s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Site/input_Enter Country_ZIP""), findTestData(""Sites/TD_Sites"").getValue(6, 1))",Chrome 73.0.3683.86,,2019-04-04 11:03:12,2019-04-04 11:03:12,0.474s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/label_Enter Contact Name""))",Chrome 73.0.3683.86,,2019-04-04 11:03:12,2019-04-04 11:03:13,0.267s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Site/input_Enter ZIP Code_cName""), findTestData(""Sites/TD_Sites"").getValue(7, 1))",Chrome 73.0.3683.86,,2019-04-04 11:03:13,2019-04-04 11:03:13,0.383s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/label_Enter Location Phone Number""))",Chrome 73.0.3683.86,,2019-04-04 11:03:13,2019-04-04 11:03:13,0.217s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Site/input_Enter Contact Name_locationPhone""), findTestData(""Sites/TD_Sites"").getValue(8, 1))",Chrome 73.0.3683.86,,2019-04-04 11:03:13,2019-04-04 11:03:14,0.597s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/a_NEXT_1""))",Chrome 73.0.3683.86,,2019-04-04 11:03:14,2019-04-04 11:03:14,0.390s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/a_Next (1)""))",Chrome 73.0.3683.86,,2019-04-04 11:03:14,2019-04-04 11:03:15,0.285s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/a_Copy to all""))",Chrome 73.0.3683.86,,2019-04-04 11:03:15,2019-04-04 11:03:15,0.459s,PASSED
+"verifyElementPresent(findTestObject(""Page_HomePage/Add Site/div_Success""), 20)",Chrome 73.0.3683.86,,2019-04-04 11:03:15,2019-04-04 11:03:15,0.149s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/a_Next_1 (1)""))",Chrome 73.0.3683.86,,2019-04-04 11:03:15,2019-04-04 11:03:15,0.226s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/a_Finish""))",Chrome 73.0.3683.86,,2019-04-04 11:03:15,2019-04-04 11:03:16,0.165s,PASSED
+"verifyElementPresent(findTestObject(""Page_HomePage/Add Site/div_Success""), 20)",Chrome 73.0.3683.86,,2019-04-04 11:03:16,2019-04-04 11:03:16,0.030s,PASSED
+delay(2),Chrome 73.0.3683.86,,2019-04-04 11:03:16,2019-04-04 11:03:18,2.003s,PASSED
+,,,,,,
+Test Cases/Sites/Add Site/TC5_Add_Multiple_Sites,Chrome 73.0.3683.86,,2019-04-04 11:03:18,2019-04-04 11:03:28,10.177s,PASSED
+"for ([row = 2, row < findTestData(""Sites/TD_Sites"").getRowNumbers(), (row++)])",Chrome 73.0.3683.86,,2019-04-04 11:03:18,2019-04-04 11:03:28,9.367s,PASSED
+,,,,,,
+Test Cases/Sites/Add Site/TC6_Add_Duplicate_Site,Chrome 73.0.3683.86,,2019-04-04 11:03:28,2019-04-04 11:03:30,1.711s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/a_Add Site""))",Chrome 73.0.3683.86,,2019-04-04 11:03:28,2019-04-04 11:03:29,0.201s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/label_Enter Site Name""))",Chrome 73.0.3683.86,,2019-04-04 11:03:29,2019-04-04 11:03:29,0.206s,PASSED
+"setText(findTestObject(""Page_HomePage/Add Site/input__siteName""), findTestData(""Sites/TD_Sites"").getValue(1, 1))",Chrome 73.0.3683.86,,2019-04-04 11:03:29,2019-04-04 11:03:29,0.631s,PASSED
+"click(findTestObject(""Page_HomePage/Add Site/label_Enter Address""))",Chrome 73.0.3683.86,,2019-04-04 11:03:29,2019-04-04 11:03:30,0.175s,PASSED
+"verifyElementPresent(findTestObject(""Page_HomePage/Duplicate Site/div_This site name already exists.""), 2)",Chrome 73.0.3683.86,,2019-04-04 11:03:30,2019-04-04 11:03:30,0.067s,PASSED
+,,,,,,
+Test Cases/Logout/TC3_Logout,Chrome 73.0.3683.86,,2019-04-04 11:03:30,2019-04-04 11:03:32,2.044s,FAILED
+delay(1),Chrome 73.0.3683.86,,2019-04-04 11:03:30,2019-04-04 11:03:31,1.007s,PASSED
+"click(findTestObject(""Page_HomePage/Profile/i_Add Site_upDownIcon""))",Chrome 73.0.3683.86,,2019-04-04 11:03:31,2019-04-04 11:03:32,0.563s,FAILED
